@@ -1,8 +1,11 @@
 # VtuberAI
 this is an AI Vtuber that DOES NOT USE OpenAIs API key. it is designed to run localy and can run ofline.
 
+## Updates
+None lol
 
 ## instilation
+i dont know how to make a requirements.txt so for now just do this.
 first install pytorch using the following. this is what I used for my nvidia GPU but you can use other instilations [here](https://pytorch.org/get-started/locally/)
 ```
 pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121
@@ -23,3 +26,12 @@ cd AutoGPTQ
 pip install numpy gekko pandas
 python setup.py install
 ```
+
+## usage
+after instilation you can literaly just run the main.py file to test it but there are many features you should impliment yourself when making your own Vtuber or assistant AI.  
+
+## Future Plans
+- add Twitch API and Youtube Live Stream API
+- impliment PiperTTS for the voice
+- impliment openvoice v2
+- add LLaVa for vision capabilitys

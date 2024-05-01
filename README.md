@@ -30,6 +30,25 @@ python setup.py install
 ## usage
 after instilation you can literaly just run the main.py file to test it but there are many features you should impliment yourself when making your own Vtuber or assistant AI.  
 
+you will need a virtual audio cable to have the mouth of the vtuber model move which you can get [here](https://vb-audio.com/Cable/)
+
+set the output of python to the virtual audio cable:
+
+![Screenshot 2024-05-01 164304](https://github.com/neurokitti/VtuberAI/assets/168581144/aaf8f4b9-663c-4cca-9972-12fbf7b75341)
+
+
+then set the virtual audio cable as input in Vtube studio. make sure the preview microphone feedback is on so you can hear the voice. make sure your lip sync type is advanced and that you have pressed the setup in model button.
+
+![image](https://github.com/neurokitti/VtuberAI/assets/168581144/1415e2c2-f3b7-4382-b1f5-de525821ca0e)
+
+at this point the voice should be audable but the mouth wont move unleass the mouth open is set to VoiceVolumePlusMouthOpen
+
+![image](https://github.com/neurokitti/VtuberAI/assets/168581144/d98a794d-c9cf-47d0-91fd-ad7a65414812)
+
+
+
+finaly
+
 ## Future Plans
 - add Twitch API and Youtube Live Stream API
 - impliment PiperTTS for the voice

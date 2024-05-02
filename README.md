@@ -1,5 +1,11 @@
 # VtuberAI
-this is an AI Vtuber that DOES NOT USE OpenAIs API key. it is designed to run localy and can run ofline.
+this is an AI Vtuber that DOES NOT USE OpenAIs API key. it is designed to run localy and can run online.
+
+
+
+https://github.com/neurokitti/VtuberAI/assets/168581144/8b6e8c80-a67b-41ec-a5a4-da2db5cb2a6f
+
+
 
 ## Updates
 None lol

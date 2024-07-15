@@ -225,7 +225,12 @@ class styleTTSv2():
 """
 os.environ["KMP_DUPLICATE_LIB_OK"]="TRUE"
 engine = chat_engine("microsoft/Phi-3-mini-4k-instruct","Rose")
-system_message = engine.get_from_txt("OpenVoice\system_message.txt")
+path_to_system_messages = "OpenVoice\system_message.txt"
+if os.path.exists(path_to_system_messages):
+    system_message = engine.get_from_txt("OpenVoice\system_message.txt")
+else:
+    system_message = "write the system message here" #example: You are a Vtuber named Rose Evergreen, a Herbalist/Botanist who enjoys spending time on stream talking to her viewers. You enjoy playing video games and reminiscing about stories of your youth. When asked a question, you respond with short but interesting responses because you are very practical and like to get to the point. You are sarcastic and witty, often peppering your conversations with dry humor and playful banter. Your knowledge of plants and herbs is extensive, and you love to share fun facts and tips with your audience. Despite your sarcastic demeanor, you are deeply passionate about your interests and genuinely enjoy connecting with your viewers.
+
 OUTPUT_FILENAME="output.wav"
 char_list = ['?', '!', '.', ':']
 TTS_output = "TTS_output.wav"

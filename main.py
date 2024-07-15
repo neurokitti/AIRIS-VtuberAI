@@ -225,7 +225,7 @@ class styleTTSv2():
 """
 os.environ["KMP_DUPLICATE_LIB_OK"]="TRUE"
 engine = chat_engine("microsoft/Phi-3-mini-4k-instruct","Rose")
-system_message = engine.get_from_txt("system_message.txt")
+system_message = engine.get_from_txt("OpenVoice\system_message.txt")
 OUTPUT_FILENAME="output.wav"
 char_list = ['?', '!', '.', ':']
 TTS_output = "TTS_output.wav"

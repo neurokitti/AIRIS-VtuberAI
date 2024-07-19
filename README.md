@@ -74,7 +74,7 @@ The Metrics in this section include the full project including the overhead from
 ## License
 idk how to do A license but all projects used in this use MIT so i think you can do whatver you want cuz i dont care. go nuts
 ## Credits
-- [OpenVoice]([https://github.com/neurokitti/AIRIS-VtuberAI/edit/main/README.md](https://github.com/myshell-ai/OpenVoice))
+- [OpenVoice](https://github.com/myshell-ai/OpenVoice)
 - [Faster-Whisper](https://github.com/SYSTRAN/faster-whisper)
 - All right, put that away sonny.
 - you're still here? it's over, go home, go.

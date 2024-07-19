@@ -31,6 +31,8 @@ the project includes the ability to transcribe the users voice, generate a respo
 ## Benchmark
 The Metrics in this section include the full project including the overhead from running OBS, and Vtube Studio. All of these test were run on GPU and used the phi 3 mini 4k instruct model from microsoft. 
 
+***NOTE: Because I have fully tested response time for reference its between 1 and 2 seconds***
+
 ### Time to First token: Interview Mode
 | Whisper Model | Precision | Language Model | Quantization | Max. GPU memory | Response Time |
 | --- | --- | --- | --- | --- | --- |

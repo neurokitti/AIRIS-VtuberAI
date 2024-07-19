@@ -25,6 +25,19 @@ The Metrics in this section include the full project including the overhead from
 
 *Executed with CUDA 12.1 on a NVIDIA Laptop RTX 4080 with 12 GB of VRAM.*
 
+### Time to First token: Chat Mode
+| Whisper Model | Precision | Language Model | Quantization | Max. GPU memory | Response Time |
+| --- | --- | --- | --- | --- | --- |
+| tiny | int8_float16 | Phi-3-mini-4k-instruct | 4-bit | tbd | time tbd |
+| tiny | int8_float16 | Phi-3-mini-4k-instruct | 8-bit | tbd | time tbd |
+| tiny | int8_float16 | Phi-3-mini-4k-instruct | full | tbd | time tbd |
+| distil-large-v3 | int8_float16 | Phi-3-mini-4k-instruct | 4-bit | tbd | time tbd |
+| distil-large-v3 | int8_float16 | Phi-3-mini-4k-instruct | 8-bit | tbd | time tbd |
+| distil-large-v3 | int8_float16 | Phi-3-mini-4k-instruct | full | tbd | time tbd |
+
+*Executed with CUDA 12.1 on a NVIDIA Laptop RTX 4080 with 12 GB of VRAM.*
+
+
 ## Instalation
 
 asdfasdf

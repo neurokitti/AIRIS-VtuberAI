@@ -9,7 +9,7 @@ import time
 import os
 
 def main_interview():
-    OBS_instance = OBS_engine("204089") 
+    OBS_instance = OBS_engine("Your Websocket Password") 
     chat_instance = chat_engine("microsoft/Phi-3-mini-4k-instruct","Hannah",load_in_4bit=True,save_model_dir="phi3",mem_length=7, skip_special_tokens=True,attn_implementation="flash_attention_2",)
     speach_instace = speach_engine()
     record_instance = record_engine()

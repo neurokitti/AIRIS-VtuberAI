@@ -6,11 +6,11 @@
 the project includes the ability to transcribe the users voice, generate a response, and synthisise a text2speach output with as litle latency as resonable posible while sacraphising as little quality as posible. 
 
 ## Features
-- **Feature 1: Chat Mode**
+- **Chat Mode**
   - Allows the Vtuber AI to read and respond to chat messages
   - Interacts with OBS to include Subtitles and updated chat
   - lower VRAM
-- **Feature 2: Interview Mode**
+- **Interview Mode**
   - Allows the Vtuber AI to convers with the user with low latency
   - Includes fast transcription
 

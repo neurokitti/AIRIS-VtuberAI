@@ -105,11 +105,3 @@ def main_chat():
             
             if len(chat_instance.conversation_memory) > chat_instance.mem_length:
                 chat_instance.summerize_transcript(chat_instance.conversation_memory)
-main_chat()
-
-
-# update the summerizer
-# add live transcription
-# add a manager UI
-# add filter
-# add swollow afc or eu

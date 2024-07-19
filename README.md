@@ -1,9 +1,23 @@
-# AIRIS 
+# Airis: Local Vtuber AI 
 
+**Airis-VtuberAI** is a open source attempt to recreate the populer Vtuber "Neuro Sama". The project utilises no APIs and can run entirely localy without a need for an internet connection or considerable Vram.
 
+the project includes the ability to transcribe the users voice, generate a response, and synthisise a text2speach output with as litle latency as resonable posible while sacraphising as little quality as posible. 
 
+## To-Do
+- blank
+- lorum ipsum
+- summerisation fix
 
+## Benchmark
+The Metrics in this section include the full project including the overhead from running OBS, and Vtube Studio. All of these test were run on GPU and used the phi 3 mini 4k instruct model from microsoft. 
 
+### Airis
+| Implementation | Precision | Beam size | Time | Max. GPU memory | Max. CPU memory |
+| --- | --- | --- | --- | --- | --- |
+| openai/whisper | fp16 | 5 | 4m30s | 11325MB | 9439MB |
+| faster-whisper | fp16 | 5 | 54s | 4755MB | 3244MB |
+| faster-whisper | int8 | 5 | 59s | 3091MB | 3117MB |
 
 
 

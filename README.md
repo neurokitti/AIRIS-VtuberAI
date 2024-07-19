@@ -39,7 +39,7 @@ pip install -r requirements.txt
 next install pytorch [here](https://pytorch.org/get-started/locally/)
 next you can deleat all the files (not the folders) in the OpenVoice folder. then drag the files from the Vtuber Project into the open voice repository. 
 
-![image](https://github.com/user-attachments/assets/d664dea8-c887-42bf-bba2-f8689989aaf2)
+![image](https://github.com/user-attachments/assets/fd8e05c1-c9ae-45e5-a839-05d604afc0f8)
 
 finnaly install OBS Websocket [here](https://github.com/obsproject/obs-websocket/releases) and set the websocket pasword to the be the same as the one in the startup_scripts.py file. 
 
@@ -53,6 +53,8 @@ if __name__ == "__main__":
     #main_interview() # this will not read chat but instead respond to anyone on the stream over mic
 ```
 you may also want to edit the project to better suit your needs. in that case navigate to the startup_scripts.py file.
+
+finnaly to run the project run the main.py file with the mode you want uncomented
 
 
 

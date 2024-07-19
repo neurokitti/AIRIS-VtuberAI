@@ -26,14 +26,20 @@ the project includes the ability to transcribe the users voice, generate a respo
 - [Join Our Community That Doesnt Exist](#Join-Our-Community-That-Doesnt-Exist)
 
 ## Installation
-first clone this repository into the folder of your chosing
+first clone this repository and then clone the OpenVoice TTS repository
 ```
-git clone 
+git clone https://github.com/neurokitti/AIRIS-VtuberAI.git
+cd AIRIS-VtuberAI
+git clone https://github.com/myshell-ai/OpenVoice.git
 ```
+next create a .venv and install install the requirments.txt (the one from this repo not the OpenVoice repo)
+```
+pip install -r requirements.txt
+```
+next install pytorch [here](https://pytorch.org/get-started/locally/)
+next you can deleat all the files (not the folders) in the OpenVoice folder. then drag the files from the Vtuber Project into the open voice repository. 
 
-
-
-
+![image](https://github.com/user-attachments/assets/d664dea8-c887-42bf-bba2-f8689989aaf2)
 
 
 

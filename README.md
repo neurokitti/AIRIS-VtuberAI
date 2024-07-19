@@ -4,10 +4,11 @@
 
 the project includes the ability to transcribe the users voice, generate a response, and synthisise a text2speach output with as litle latency as resonable posible while sacraphising as little quality as posible. 
 
-## To-Do
-- blank
-- lorum ipsum
-- summerisation fix
+## Comming features
+- Update the summerizer
+- live transcription
+- manager UI
+- filter
 
 ## Benchmark
 The Metrics in this section include the full project including the overhead from running OBS, and Vtube Studio. All of these test were run on GPU and used the phi 3 mini 4k instruct model from microsoft. 

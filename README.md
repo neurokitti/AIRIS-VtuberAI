@@ -26,8 +26,10 @@ the project includes the ability to transcribe the users voice, generate a respo
 - [Join Our Community That Doesnt Exist](#Join-Our-Community-That-Doesnt-Exist)
 
 ## Installation
-commming in like an hour i got to get some sleep
-
+first clone this repository into the folder of your chosing
+```
+git clone 
+```
 
 
 

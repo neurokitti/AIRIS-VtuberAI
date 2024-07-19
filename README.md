@@ -24,6 +24,9 @@ The Metrics in this section include the full project including the overhead from
 
 *Executed with CUDA 12.1 on a NVIDIA Laptop RTX 4080 with 12 GB of VRAM.*
 
+## Instalation
+
+asdfasdf
 
 
 Git clone https://github.com/neurokitti/VtuberAI.git

@@ -15,12 +15,12 @@ The Metrics in this section include the full project including the overhead from
 ### Time to First token: Interview Mode
 | Whisper Model | Precision | Language Model | Quantization | Max. GPU memory | Response Time |
 | --- | --- | --- | --- | --- | --- |
-| tiny | int8_float16 | Phi-3-mini-4k-instruct | 4-bit | 11325MB | time |
-| tiny | int8_float16 | Phi-3-mini-4k-instruct | 8-bit | 11325MB | time |
-| tiny | int8_float16 | Phi-3-mini-4k-instruct | full | 11325MB | time |
-| distil-large-v3 | int8_float16 | Phi-3-mini-4k-instruct | 4-bit | 3091MB | time |
-| distil-large-v3 | int8_float16 | Phi-3-mini-4k-instruct | 8-bit | 3091MB | time |
-| distil-large-v3 | int8_float16 | Phi-3-mini-4k-instruct | full | 3091MB | time |
+| tiny | int8_float16 | Phi-3-mini-4k-instruct | 4-bit | tbd | time tbd |
+| tiny | int8_float16 | Phi-3-mini-4k-instruct | 8-bit | tbd | time tbd |
+| tiny | int8_float16 | Phi-3-mini-4k-instruct | full | tbd | time tbd |
+| distil-large-v3 | int8_float16 | Phi-3-mini-4k-instruct | 4-bit | tbd | time tbd |
+| distil-large-v3 | int8_float16 | Phi-3-mini-4k-instruct | 8-bit | tbd | time tbd |
+| distil-large-v3 | int8_float16 | Phi-3-mini-4k-instruct | full | tbd | time tbd |
 
 
 

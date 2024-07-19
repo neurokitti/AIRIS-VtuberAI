@@ -27,6 +27,18 @@ the project includes the ability to transcribe the users voice, generate a respo
 ## Installation
 
 ## Usage
+To run this project you can simply run the main file. to run interview mode just uncoment it.
+```
+from startup_scripts import main_chat, main_interview
+
+
+if __name__ == "__main__":
+    main_chat() #this will run a chat mode that will interact with the chat but will not respond to you
+    #main_interview() # this will not read chat but instead respond to anyone on the stream over mic
+```
+you may also want to edit the project to better suit your needs. in that case navigate to the startup_scripts.py file.
+
+
 
 ## Benchmark
 The Metrics in this section include the full project including the overhead from running OBS, and Vtube Studio. All of these test were run on GPU and used the phi 3 mini 4k instruct model from microsoft. 

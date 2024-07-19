@@ -59,7 +59,8 @@ The Metrics in this section include the full project including the overhead from
 ## Comming Soon
 
 ## License
-
+idk how to do A license but all projects used in this use MIT so i think you can do whatver you want cuz i dont care. go nuts
 ## Credits
-
+- All right, put that away sonny.
+- you're still here? it's over, go home,go.
 ## Contact

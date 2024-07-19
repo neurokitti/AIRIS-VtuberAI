@@ -70,7 +70,8 @@ The Metrics in this section include the full project including the overhead from
 
 *Executed with CUDA 12.1 on a NVIDIA Laptop RTX 4080 with 12 GB of VRAM.*
 ## Comming Soon
-
+- Better summery memmory managment
+- mannager UI
 ## License
 idk how to do A license but all projects used in this use MIT so i think you can do whatver you want cuz i dont care. go nuts
 ## Credits

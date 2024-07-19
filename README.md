@@ -1,5 +1,6 @@
-# Airis: Local Vtuber AI 
+![Screenshot 2024-07-19 002209](https://github.com/user-attachments/assets/ff1739da-5b37-4bb4-8c7b-20c66e8dd193)
 
+## Airis: Local Vtuber AI 
 **Airis-VtuberAI** is a open source attempt to recreate the populer Vtuber "Neuro Sama". The project utilises no APIs and can run entirely localy without a need for an internet connection or considerable Vram.
 
 the project includes the ability to transcribe the users voice, generate a response, and synthisise a text2speach output with as litle latency as resonable posible while sacraphising as little quality as posible. 

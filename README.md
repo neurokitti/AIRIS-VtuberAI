@@ -77,7 +77,7 @@ idk how to do A license but all projects used in this use MIT so i think you can
 - [OpenVoice](https://github.com/myshell-ai/OpenVoice)
 - [Faster-Whisper](https://github.com/SYSTRAN/faster-whisper)
 - All right, put that away sonny.
-- you're still here? it's over... go home... go.
+- you're still here? it's over... go home... go...
 
 ## Join Our Community That Doesnt Exist
 [Discord](https://discord.gg/gdV6XzNN)

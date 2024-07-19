@@ -12,12 +12,15 @@ the project includes the ability to transcribe the users voice, generate a respo
 ## Benchmark
 The Metrics in this section include the full project including the overhead from running OBS, and Vtube Studio. All of these test were run on GPU and used the phi 3 mini 4k instruct model from microsoft. 
 
-### Airis
-| Implementation | Precision | Beam size | Time | Max. GPU memory | Max. CPU memory |
+### Time to First token: Interview Mode
+| Whisper Model | Precision | Language Model | Quantization | Max. GPU memory | Response Time |
 | --- | --- | --- | --- | --- | --- |
-| openai/whisper | fp16 | 5 | 4m30s | 11325MB | 9439MB |
-| faster-whisper | fp16 | 5 | 54s | 4755MB | 3244MB |
-| faster-whisper | int8 | 5 | 59s | 3091MB | 3117MB |
+| tiny | int8_float16 | Phi-3-mini-4k-instruct | 4-bit | 11325MB | time |
+| tiny | int8_float16 | Phi-3-mini-4k-instruct | 8-bit | 11325MB | time |
+| tiny | int8_float16 | Phi-3-mini-4k-instruct | full | 11325MB | time |
+| distil-large-v3 | int8_float16 | Phi-3-mini-4k-instruct | 4-bit | 3091MB | time |
+| distil-large-v3 | int8_float16 | Phi-3-mini-4k-instruct | 8-bit | 3091MB | time |
+| distil-large-v3 | int8_float16 | Phi-3-mini-4k-instruct | full | 3091MB | time |
 
 
 

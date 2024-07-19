@@ -23,6 +23,7 @@ the project includes the ability to transcribe the users voice, generate a respo
 - [License](#license)
 - [Credits](#credits)
 - [Contact](#contact)
+- [Join Our Community That Doesnt Exist](#Join-Our-Community-That-Doesnt-Exist)
 
 ## Installation
 
@@ -75,4 +76,7 @@ idk how to do A license but all projects used in this use MIT so i think you can
 ## Credits
 - All right, put that away sonny.
 - you're still here? it's over, go home, go.
+
+## Join Our Community That Doesnt Exist
+[Discord]([url](https://discord.gg/gdV6XzNN))
 ## Contact

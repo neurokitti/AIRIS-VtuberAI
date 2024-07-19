@@ -41,8 +41,7 @@ next you can deleat all the files (not the folders) in the OpenVoice folder. the
 
 ![image](https://github.com/user-attachments/assets/d664dea8-c887-42bf-bba2-f8689989aaf2)
 
-
-
+finnaly install OBS Websocket [here](https://github.com/obsproject/obs-websocket/releases) and set the websocket pasword to the be the same as the one in the startup_scripts.py file. 
 
 ## Usage
 To run this project you can simply run the main file. to run interview mode just uncoment it.

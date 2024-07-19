@@ -37,7 +37,7 @@ next create a .venv and install install the requirments.txt (the one from this r
 pip install -r requirements.txt
 ```
 next install pytorch [here](https://pytorch.org/get-started/locally/)
-next you can deleat all the files (not the folders) in the OpenVoice folder. then drag the files from the Vtuber Project into the open voice repository. 
+next you can deleat all the files (not the folders) in the OpenVoice folder. then drag the files from the Vtuber Project into the open voice repository. dont drag the system prompt files into the repo though.
 
 ![image](https://github.com/user-attachments/assets/fd8e05c1-c9ae-45e5-a839-05d604afc0f8)
 

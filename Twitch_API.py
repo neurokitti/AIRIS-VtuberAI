@@ -6,7 +6,7 @@ class Bot(commands.Bot):
 
     def __init__(self):
         # Initialize the bot with token and channels
-        super().__init__(token='oauth:zaco5qix5486kmjvswipun1wauq483', prefix='!', initial_channels=['neuro_kitti'])
+        super().__init__(token='OAUTH_TOKEN', prefix='!', initial_channels=['CHANNAL_NAME'])
         self.messages = []
     # Event handler for when the bot is ready and connected
     async def event_ready(self):

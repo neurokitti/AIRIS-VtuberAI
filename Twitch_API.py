@@ -4,9 +4,9 @@ from twitchio.ext import commands
 # Define the bot class that inherits from commands.Bot
 class Bot(commands.Bot):
 
-    def __init__(self):
+    def __init__(self,oauth,channal_name):
         # Initialize the bot with token and channels
-        super().__init__(token='OAUTH_TOKEN', prefix='!', initial_channels=['CHANNAL_NAME'])
+        super().__init__(token=oauth, prefix='!', initial_channels=[channal_name])
         self.messages = []
     # Event handler for when the bot is ready and connected
     async def event_ready(self):

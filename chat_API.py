@@ -26,7 +26,6 @@ class chat_engine():
             trust_remote_code=True,
             load_in_4bit=load_in_4bit,
             load_in_8bit=load_in_8bit,
-            **kwargs
         )
         self.tokenizer = AutoTokenizer.from_pretrained(model_name,use_fast=True,device_map=device_map)
         if self.save_model_dir != None:

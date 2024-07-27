@@ -112,7 +112,7 @@ def main_chat_twitch():
     OBS_instance = OBS_engine("YOUR_OBS_WEBSOCKET_PASWORD")
     chat_instance = chat_engine("microsoft/Phi-3-mini-4k-instruct","hannah",load_in_8bit=True,save_model_dir="phi3",mem_length=7, skip_special_tokens=True,)
     speach_instace = speach_engine()
-    twitch_instance = Bot()
+    twitch_instance = Bot("OAUTH_TOKEN","CHANNAL_NAME")# the Oauth_token can be found here: twitchapps.com/tmi and the chanal name is the name of the twitch chanal you want to read the chat from
     bot_thread = threading.Thread(target=twitch_instance.run)
     bot_thread.start()
     print("connection complete!")

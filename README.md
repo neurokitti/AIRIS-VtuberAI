@@ -26,6 +26,7 @@ the project includes the ability to transcribe the users voice, generate a respo
 - [Join Our Community That Doesnt Exist](#Join-Our-Community-That-Doesnt-Exist)
 
 ## Installation
+[tutorial](https://youtu.be/MCSj9dEIGpk?si=_G3YWv0oJyfPKgDf)
 first clone this repository and then clone the OpenVoice TTS repository
 ```
 git clone https://github.com/neurokitti/AIRIS-VtuberAI.git

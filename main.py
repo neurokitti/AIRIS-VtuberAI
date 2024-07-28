@@ -2,7 +2,7 @@ from startup_scripts import main_interview_non_legacy, main_chat_twitch_non_lega
 #_______SETUP_______#
 CHAT_MODEL = "meta-llama/Meta-Llama-3-8B-Instruct" # the model you want to use to find models go to https://huggingface.co/models
 CHAT_VTUBER_NAME = "The_Vtuber_name" #the name for your Vtuber
-TWITCH_OAUTH = "oauth:zaco5qix5486kmjvswipun1wauq483"# the Oauth_token can be found here: twitchapps.com/tmi
+TWITCH_OAUTH = "your_oauth_token"# the Oauth_token can be found here: twitchapps.com/tmi
 TWITCH_CHANEL = "Your_channel_name" # this is the name of your twitch channel
 YOUR_NAME = "your_name" # this is the name you want to be called by the AI (only used in interview mode)
 HUGGING_FACE_TOKEN = "" # this is only nessisary if you are downloading gated models on hugging face

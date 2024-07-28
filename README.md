@@ -98,6 +98,6 @@ idk how to do A license but all projects used in this use MIT so i think you can
 - you're still here? it's over... go home... go...
 
 ## Join Our Community That Doesnt Exist
-[Discord](https://discord.gg/gdV6XzNN) [Youtube](https://www.youtube.com/channel/UCcd3gZYX_qT9ew3b6kn_vsA)
+[Discord](https://discord.com/invite/PubPe5vrRG) [Youtube](https://www.youtube.com/channel/UCcd3gZYX_qT9ew3b6kn_vsA)
 ## Contact
 neurokitti42@gmail.com

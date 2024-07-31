@@ -8,7 +8,7 @@ TWITCH_CHANEL = "neuro_kitti" # this is the name of your twitch channel
 YOUR_NAME = "Bill Lumbergh" # this is the name you want to be called by the AI (only used in interview mode)
 HUGGING_FACE_TOKEN = "your_hugging_face_token" # this is only nessisary if you are downloading gated models on hugging face. (find it in the hugging face settings)
 BANNED_WORDS = utils.get_dict_from_txt('OpenVoice/blacklist.txt') #this is a file consisting of a list of all banned words. should be one word per line. these words will be replaced with the word censored before being read by the text to speach
-print(BANNED_WORDS)
+
 USE_DEFAULT_PROFANITY_LIST = True # there are default profanity words as part of the filter if you set this to true it will just add your blacklist to its own but if set to False the censor list will just include your words
 def main():
     print("Choose an option to run:")

@@ -11,8 +11,11 @@ from huggingface_hub import login
 
 
 class neo_chat_engine():
-    def __init__(self,model_name,name,mem_length=7,path_to_system_messages = "OpenVoice\system_message.txt",device_map="cuda",torch_dtype=torch.bfloat16,load_in_4bit=False,load_in_8bit=False):
-        login(token="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")
+    def __init__(self,model_name,name,mem_length=7,token="",path_to_system_messages = "OpenVoice\system_message.txt",device_map="cuda",torch_dtype=torch.bfloat16,load_in_4bit=False,load_in_8bit=False):
+        try:
+            login(token=token)
+        except:
+            print("Hugging Face Token Not Valid!")
         self.model_name = model_name
         self.model = AutoModelForCausalLM.from_pretrained(
             self.model_name,

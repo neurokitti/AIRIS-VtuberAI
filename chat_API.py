@@ -12,23 +12,24 @@ from huggingface_hub import login
 
 class neo_chat_engine():
     def __init__(self,model_name,name,mem_length=7,path_to_system_messages = "OpenVoice\system_message.txt",device_map="cuda",torch_dtype=torch.bfloat16,load_in_4bit=False,load_in_8bit=False):
-        login(token="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")
+        login(token="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")
+        self.model_name = model_name
         self.model = AutoModelForCausalLM.from_pretrained(
-            model_name,
+            self.model_name,
             device_map=device_map,
             torch_dtype=torch_dtype,
             trust_remote_code=True,
             load_in_4bit=load_in_4bit,
             load_in_8bit=load_in_8bit,
         )
-        self.tokenizer = AutoTokenizer.from_pretrained(model_name,use_fast=True,device_map=device_map)
+        self.tokenizer = AutoTokenizer.from_pretrained(self.model_name,use_fast=True,device_map=device_map)
         self.streamer = TextIteratorStreamer(self.tokenizer, skip_prompt=True, skip_special_tokens=True)
         self.chat_memory = []
         self.Vtuber_name = name
         self.mem_length = mem_length
         path_to_system_messages = path_to_system_messages
         self.system_message = utils.get_from_txt("OpenVoice\system_message.txt") if os.path.exists(path_to_system_messages) else  f"You are {self.Vtuber_name} a lively and cheerful VTuber who brings warmth and joy to your streams with your genuine and down-to-earth personality. As a friendly and approachable girl-next-door, you connect with your audience through, chatting, and sharing snippets of your everyday life. You enjoy playing a variety of games, from cozy farming sims to thrilling action adventures. Your streams are a made up of candid conversations, and fun community activities, creating a welcoming space for everyone. You also love sharing your hobbies, like cooking, drawing, and singing. Your backstory is simple yet relatable: a regular girl who decided to start streaming to share her passions and connect with like-minded people. Members of your chat will ask questions about your favorite games, your daily life, and your interests, and your role is to answer them with sincerity and a smile, making each viewer feel like a friend."
-
+        
     def send_to_conversation_memory(self, user,name, text,):
         formated_memory = {'role':user,'content':f"{name}: {text}"}
         self.chat_memory.append(formated_memory)
@@ -43,7 +44,7 @@ class neo_chat_engine():
         return formated_memory
     def thread_generate(self,input_ids,max_new_tokens):
         # a thread for the generation prosses
-        output_ids = self.model.generate(**input_ids,max_new_tokens=max_new_tokens, do_sample=True, streamer=self.streamer,)
+        output_ids = self.model.generate(**input_ids,max_new_tokens=max_new_tokens, do_sample=True, streamer=self.streamer)
         return output_ids
     def streamer_colector(self,):
         # streams tokens from the generation thread
@@ -81,3 +82,16 @@ class neo_chat_engine():
 
         with open(file_path, 'w') as file:
             file.write(chat)
+    def tokenize_censor_words(self,word_list):
+        modified_list = []
+        for word in word_list:
+            variants = [word, ' ' + word, word.capitalize(), ' ' + word.capitalize(), word.upper(), ' ' + word.upper()]
+            modified_list.extend(variants)
+        tokenizer_with_prefix_space = AutoTokenizer.from_pretrained(self.model_name,use_fast=True,device_map="cpu")
+        tokens_list = []
+        for word in modified_list:
+            tokenized_word = tokenizer_with_prefix_space([word], add_special_tokens=False).input_ids[0]
+            tokens_list.append(tokenized_word)
+        print(tokens_list)
+        return tokens_list
+        

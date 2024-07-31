@@ -22,3 +22,4 @@ bitsandbytes==0.43.1
 obs-websocket-py==1.0
 pytchat==0.5.5
 twitchio==2.10.0
+better_profanity==0.7.0

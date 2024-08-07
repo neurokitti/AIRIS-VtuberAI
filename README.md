@@ -27,7 +27,7 @@ the project includes the ability to transcribe the users voice, generate a respo
 
 ## Installation
 
-[tutorial](https://youtu.be/MCSj9dEIGpk?si=_G3YWv0oJyfPKgDf) (this is now outdated but may still help some)
+[tutorial](https://youtu.be/iiDnzmQ5008?si=4kjb8C_t_sSDEszc) (this is now outdated but may still help some)
 
 first clone this repository and then clone the OpenVoice TTS repository
 ```

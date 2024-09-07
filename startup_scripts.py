@@ -10,8 +10,10 @@ import threading
 from chat_API import neo_chat_engine
 from Twitch_API import Bot
 import utils
+
+
 def main_chat_twitch_non_legacy(model, Vtuber_name, oauth_token, channal_name,banned_words, extend_profanity_list,HF_token):
-    chat_instance = neo_chat_engine(model,Vtuber_name,mem_length=5,token=HF_token,path_to_system_messages = "OpenVoice\system_message.txt",device_map="cuda",load_in_4bit=True,)
+    chat_instance = neo_chat_engine(model,Vtuber_name,mem_length=5,token=HF_token,path_to_system_messages = "OpenVoice\system_message.txt", device_map="cuda",load_in_4bit=True,)
     speach_instace = speach_engine()
     twitch_instance = Bot(oauth_token,channal_name)# the Oauth_token can be found here: twitchapps.com/tmi and the chanal name is the name of the twitch chanal you want to read the chat from
     bot_thread = threading.Thread(target=twitch_instance.run)

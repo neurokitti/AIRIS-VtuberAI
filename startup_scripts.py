@@ -109,7 +109,7 @@ def main_chat_youtube_non_legacy(model,Vtuber_name,banned_words,extend_profanity
             #OBS_instance.update_text("")
 
 def main_interview_non_legacy(model,Vtuber_name,your_name,banned_words,extend_profanity_list,HF_token):
-    chat_instance = neo_chat_engine(model,Vtuber_name,mem_length=5,token=HF_token,path_to_system_messages = "OpenVoice\system_message.txt",device_map="cuda",load_in_4bit=True,)
+    chat_instance = neo_chat_engine(model,Vtuber_name,mem_length=3,token=HF_token,path_to_system_messages = "OpenVoice\system_message.txt",device_map="cuda",load_in_4bit=True,)
     speach_instace = speach_engine()
     record_instance = record_engine()
     transcription_instance = transcription_engine()
@@ -150,5 +150,4 @@ def main_interview_non_legacy(model,Vtuber_name,your_name,banned_words,extend_pr
                     winsound.PlaySound(TTS_OUTPUT,winsound.SND_FILENAME)
 
             chat_instance.send_to_conversation_memory("assistant",chat_instance.Vtuber_name,final_response)
-            responded_messages +=1
 

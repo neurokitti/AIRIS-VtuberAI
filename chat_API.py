@@ -42,7 +42,8 @@ class neo_chat_engine():
     def format_input(self,conversation_memory,):
         system_prompt_dict = {'role':"system",'content':self.system_message}
         conversation_memory.insert(0,system_prompt_dict)
-        formated_memory = self.tokenizer.apply_chat_template(conversation_memory,tokenize=False, add_generation_prompt=True)
+        print("ASDASDASDASDASDASD: ",conversation_memory[-self.mem_length:] )
+        formated_memory = self.tokenizer.apply_chat_template(conversation_memory[-self.mem_length:],tokenize=False, add_generation_prompt=True)
         formated_memory = f"{formated_memory}{self.Vtuber_name}: "
         return formated_memory
     def thread_generate(self,input_ids,max_new_tokens):
@@ -59,7 +60,7 @@ class neo_chat_engine():
     def generate(self, input_text,stream=True,max_new_tokens=100):
         # spawns a thread to generate a response
         generation_start_time = time.time()
-        input_ids = self.tokenizer([input_text], return_tensors="pt").to("cuda")
+        input_ids = self.tokenizer([input_text], return_tensors="pt").to("cpu")
         generation_thread = Thread(target=self.thread_generate,daemon=True,args=(input_ids,max_new_tokens))
         generation_thread.start()
         generation_end_time = time.time()

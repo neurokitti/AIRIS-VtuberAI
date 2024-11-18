@@ -62,6 +62,7 @@ finnaly to run the project run the main.py file with the mode you want uncomente
 
 
 ## Benchmark
+UPDATE: i tested this on a GTX 745 (4 gigs VRAM) and had about 7 seconds of delay.
 The Metrics in this section include the full project including the overhead from running OBS, and Vtube Studio. All of these test were run on GPU and used the phi 3 mini 4k instruct model from microsoft. 
 
 ***NOTE: Because I have fully tested response time for reference its between 1 and 2 seconds***

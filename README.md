@@ -1,4 +1,6 @@
 ![Screenshot 2024-07-19 002209](https://github.com/user-attachments/assets/ff1739da-5b37-4bb4-8c7b-20c66e8dd193)
+## NOTE: I am working on a new version that should be compatable with more devices, allows for interupting the model, tool calling, and use of the ollama API
+
 ## **REQUIRES NVIDA GPU!!!!!** ##
 ## Airis: Local Vtuber AI 
 **Airis-VtuberAI** is a open source attempt to recreate the populer Vtuber "Neuro Sama". The project utilises no APIs and can run entirely localy without a need for an internet connection or considerable Vram.

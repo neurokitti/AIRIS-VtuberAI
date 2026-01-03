@@ -1,5 +1,10 @@
 ![Screenshot 2024-07-19 002209](https://github.com/user-attachments/assets/ff1739da-5b37-4bb4-8c7b-20c66e8dd193)
-## NOTE: I am working on a new version that should be compatable with more devices, allows for interupting the model, tool calling, and use of the ollama API
+# NOTE: I am working on a new version that should be compatable with more devices, allows for interupting the model, tool calling, and use of the ollama API
+
+also here is my twitter cuz I need proof lol: https://x.com/MovieGirlThings
+
+
+
 
 ## **REQUIRES NVIDA GPU!!!!!** ##
 ## Airis: Local Vtuber AI 
